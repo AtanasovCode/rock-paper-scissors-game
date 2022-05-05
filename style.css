@@ -1,0 +1,274 @@
+/*VARIABLES*/
+:root {
+    --main-bg: #222;
+    --started-bg: rgb(10, 10, 10);
+    --font-color: #fff;
+    --font-size: 16px;
+    --btn-bg: dodgerblue;
+    --btn-active: rgb(117, 181, 246);
+}
+
+/*HARD RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*HARD RESET*/
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--started-bg);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--font-color);
+    font-size: var(--font-size);
+    overflow-x:
+}
+
+main {
+    height: 100vh;
+    background-color: var(--started-bg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-container {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+.text-container {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.game-explanation {
+    opacity: .6;
+}
+
+
+
+.game-container {
+    height: 105vh;
+}
+
+.game-heading-container {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-heading {
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-heading h1 {
+    padding: 15px;
+}
+
+.robo {
+    width: 125px;
+    height: 125px;
+    margin-left: 10px;
+}
+
+.selected-container {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-selected-container,
+.computer-selected-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-container {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-family: monospace;
+    margin: 5px 50px;
+}
+
+.score-container {
+    display: flex;
+    font-size: 33px;
+}
+
+.round-container {
+    text-align: center;
+}
+
+
+.winner.active {
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: .6;
+    text-align: center;
+}
+
+.winner {
+    opacity: 0;
+}
+
+.btn {
+    width: 130px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.box,
+.choice {
+    margin: 10px 40px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 130px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.choice.active:hover {
+    border: 5px solid aliceblue;
+    cursor: pointer;
+}
+
+.choice img {
+    width: 150px;
+}
+
+
+.selection-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1110px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .image-container {
+        background-size: 500px;
+        width: 100vw;
+    }
+
+    .text-container {
+        margin-bottom: 50px;
+    }
+    
+    .main-heading {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    main {
+        margin-bottom: 120px;
+    }
+    .image-container {
+        background-size: cover;
+    }
+    .text-container {
+        width: 65vw;
+        margin: 10px 40px;
+    }
+    .main-heading {
+        font-size: 22px;
+    }
+    .game-heading-container {
+        height: 60vw;
+        margin-bottom: 60px;
+    }
+    .game-heading {
+        margin: 5vw 5vw 20vw 5vw;
+        overflow: hidden;
+        width: 65vw;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .robo {
+        width: 65vw;
+        max-width: 400px;
+        height: 200px;
+    }
+    .selected-container {
+        display: flex;
+        flex-direction: column;
+        height: 65vh;
+    }
+    .info-container {
+        width: 50px;
+    }
+    .box {
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        min-height: 100px;
+        margin: 15px;
+        background-size: 60px; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+    .choice {
+        width: 75px;
+        height: 75px;
+        background-size: 60px; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        margin: 70px 10px;
+    }
+    .round-container {
+        width: 300px;
+        font-size: 17px;
+    }
+    .selected-container div {
+        margin: 5px;
+    }
+    .btn {
+        margin: 5px 5px 50px 5px; 
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Rock Paper Scissors Game</title>
+
+    <script src="script.js" defer></script>-
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="text-container">
+            <h2 class="main-heading">Let's play some Rock Paper Scissors!</h2>
+            <p class="game-explanation">
+                <em>Rock Paper Scissors</em> (also known by
+                other orderings of the three items, with "rock"
+                sometimes being called "stone", or as Rochambeau,
+                roshambo, or ro-sham-bo)[1][2][3] is a hand
+                game originating from China, usually
+                played between <strong>two people</strong>
+            </p>
+        </div>
+        <div class="image-container"
+            style="background-image: url(https://images.unsplash.com/photo-1618214839021-3fbe98a597bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);">
+        </div>
+    </main>
+    <div class="game-container">
+        <div class="game-heading-container">
+            <div class="game-heading">
+                <h1>Hi! I'm Robo, Let's play together!</h1>
+                <img src="images/robot.jpg" alt="robot icon" class="robo">
+            </div>
+        </div>
+        <div class="selected-container">
+            <div class="player-selected-container">
+                <div class="who-plays">Player</div>
+                <div class="player-selected box"></div>
+            </div>
+            <div class="info-container">
+                <div class="score-container">
+                    <div class="player-score">0</div>
+                    <div>:</div>
+                    <div class="computer-score">0</div>
+                </div>
+                <div class="round-container">
+                    <div class="round">
+                        Round: <span class="rounds">0</span>
+                    </div>
+                    <div class="winner active">Who Will Win?</div>
+                </div>
+                <div class="button-container">
+                    <input type="button" class="btn" value="New Round!">
+                </div>
+            </div>
+            <div class="computer-selected-container">
+                <div class="who-plays">Computer</div>
+                <div class="computer-selected box"></div>
+            </div>
+        </div>
+        <div class="selection-container">
+            <div class="choice active" id="rock" style="background-image: url(images/rock.png);">
+            </div>
+            <div class="choice active" id="paper" style="background-image: url(images/paper.png);">
+            </div>
+            <div class="choice active" id="scissors" style="background-image: url(images/scissors.png);">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
